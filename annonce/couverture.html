@@ -20,68 +20,37 @@ h1 .g{color:var(--gold)}
 .chip::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--gold)}
 .foot{position:absolute;left:72px;bottom:46px;font-size:19px;color:var(--ash);letter-spacing:.05em}
 .foot b{color:#fff}
-h1{font-size:150px}
-.vis{position:absolute;right:64px;top:132px;width:620px;height:660px}
-.lab{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:22px;color:var(--gold-text)}
-.menu{background:#111;border:1.5px solid #333;border-radius:12px;overflow:hidden;margin-top:12px}
-.mh{background:#1b1b1b;padding:12px 16px;font-family:"Saira Condensed";font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:18px;color:var(--smoke)}
-.r{display:grid;grid-template-columns:36px 1fr 86px;align-items:center;padding:12px 16px;border-top:1px solid #262626;font-size:18px;color:var(--smoke)}
-.r .n{font-family:"Saira Condensed";font-weight:900;color:var(--gold);font-size:24px}
-.r .l{height:8px;border-radius:4px;background:#3a3a3a}
-.yes,.no{font-family:"Saira Condensed";font-weight:800;font-size:20px;text-align:right;letter-spacing:.06em}
-.yes{color:var(--gold)} .no{color:#666}
-.arrow{display:block;margin:14px auto 6px;width:40px}
-.mind{position:relative;height:250px}
-.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--gold);color:#000;font-family:"Saira Condensed";font-weight:900;text-transform:uppercase;font-size:24px;padding:14px 22px;border-radius:12px;white-space:nowrap}
-.br{position:absolute;background:#141414;border:1.5px solid #3a3a3a;border-radius:10px;padding:9px 14px;font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:18px;color:var(--smoke)}
-.br.vecu{border:2.5px solid var(--gold);color:var(--gold-text);font-size:21px}
-svg.lines{position:absolute;inset:0}
+.who{margin-top:26px;font-size:21px;color:var(--ash);letter-spacing:.04em}
+.steps{position:absolute;display:flex;flex-direction:column}
+.st{display:flex;align-items:center;gap:22px;background:#141414;border:1.5px solid #2e2e2e;border-left:4px solid var(--gold);border-radius:12px}
+.st .n{flex:0 0 auto;border-radius:50%;background:var(--gold);color:#000;font-family:"Saira Condensed";font-weight:900;display:grid;place-items:center}
+.st b{display:block;font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;color:#fff;letter-spacing:.02em;line-height:1.1}
+.st div span{display:block;color:var(--ash);margin-top:4px}
 body{width:1960px;height:700px}
 .brand{top:44px;left:80px}
-.left{left:80px;top:118px;width:900px}
-h1{font-size:136px}
-.sub{font-size:44px}
-.chips{margin-top:26px}
-.foot{left:auto;right:80px;bottom:40px}
-.vis{right:70px;top:70px;width:900px;height:580px}
-.menu{width:430px}
-.arrow{position:absolute;left:452px;top:200px;margin:0;transform:rotate(-90deg)}
-.mind{position:absolute;left:500px;top:80px;width:400px;height:330px}
-.mind .br{font-size:16px;padding:8px 11px}
-.mind .br.vecu{font-size:19px}
-.core{font-size:22px}
+.left{left:80px;top:112px;width:900px}
+h1{font-size:104px;line-height:.96}
+.sub{font-size:42px;margin-top:14px}
+.who{margin-top:18px}
+.foot{left:auto;right:80px;bottom:30px}
+.steps{right:80px;top:104px;width:820px;gap:16px}
+.st{padding:16px 22px}
+.st .n{width:46px;height:46px;font-size:27px}
+.st b{font-size:28px}
+.st div span{font-size:17px}
 </style></head><body>
 <div class="brand"><svg viewBox="0 0 80 100"><path d="M6 6 L74 6 L40 50 Z" fill="#FFC000"/><path d="M40 50 L6 94 L74 94 Z" fill="#FFC000"/></svg><div><div class="n">Tariqa Pro</div><div class="c">Collectif</div></div></div>
 <div class="left">
-  <div class="kicker">Nouvelle brique · réservée aux membres</div>
-  <h1>Plus jamais<br><span class="g">à sec.</span></h1>
-  <p class="sub">Chaque semaine, des sujets<br><span class="g">vérifiés à la source</span>, prêts à filmer</p>
-  <div class="chips">
-    <div class="chip">Trié selon ta marque</div>
-    <div class="chip">Tu réponds OUI / NON</div>
-    <div class="chip">Une carte prête à tourner</div>
-    <div class="chip">Ton vécu au centre</div>
-  </div>
+  <div class="kicker">Nouvelle brique · Veille de sujets</div>
+  <h1>Tes sujets<br>de contenu,<br><span class="g">chaque semaine.</span></h1>
+  <p class="sub">Vérifiés à la source,<br><span class="g">prêts à être filmés.</span></p>
+  <p class="who">Réservé aux membres du Collectif Tariqa PRO</p>
 </div>
-<div class="vis">
-  <div class="lab">Le menu du lundi</div>
-  <div class="menu">
-    <div class="mh">Veille de sujets · semaine du 2/11</div>
-    <div class="r"><span class="n">1</span><span class="l" style="width:88%"></span><span class="yes">OUI</span></div>
-    <div class="r"><span class="n">2</span><span class="l" style="width:70%"></span><span class="no">NON</span></div>
-    <div class="r"><span class="n">3</span><span class="l" style="width:80%"></span><span class="yes">OUI</span></div>
-    <div class="r"><span class="n">4</span><span class="l" style="width:60%"></span><span class="no">NON</span></div>
-  </div>
-  <svg class="arrow" viewBox="0 0 40 50"><path d="M20 2 V44 M6 30 L20 46 L34 30" fill="none" stroke="#FFC000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  <div class="mind">
-    <svg class="lines" viewBox="0 0 400 330" preserveAspectRatio="none"><g stroke="#3a3a3a" stroke-width="2"><line x1="200" y1="165" x2="70" y2="40"/><line x1="200" y1="165" x2="330" y2="40"/><line x1="200" y1="165" x2="70" y2="290"/><line x1="200" y1="165" x2="330" y2="290"/></g><line x1="200" y1="165" x2="200" y2="320" stroke="#FFC000" stroke-width="3"/></svg>
-    <div class="core">L'idée</div>
-    <div class="br" style="left:10px;top:12px">L'info sourcée</div>
-    <div class="br" style="right:10px;top:12px">Pourquoi ça compte</div>
-    <div class="br" style="left:10px;bottom:6px">L'exemple</div>
-    <div class="br" style="right:10px;bottom:6px">La chute</div>
-    <div class="br vecu" style="left:50%;transform:translateX(-50%);bottom:-34px">Ton vécu à toi</div>
-  </div>
+<div class="steps">
+  <div class="st"><span class="n">1</span><div><b>Claude suit l'actualité de ta niche</b><span>Sources officielles, presse, autres langues, YouTube</span></div></div>
+  <div class="st"><span class="n">2</span><div><b>Il vérifie chaque chiffre à la source</b><span>Le texte officiel, pas l'article qui le reprend</span></div></div>
+  <div class="st"><span class="n">3</span><div><b>Tu choisis tes sujets : OUI ou NON</b><span>Cinq minutes, depuis un seul tableau</span></div></div>
+  <div class="st"><span class="n">4</span><div><b>Tu reçois une carte prête à filmer</b><span>Avec une place pour ton vécu à toi</span></div></div>
 </div>
 <div class="foot"><b>Collectif Tariqa PRO</b> · Entreprendre. Ensemble. Vers Dieu.</div>
 </body></html>

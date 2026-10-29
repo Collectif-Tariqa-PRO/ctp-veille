@@ -2,14 +2,14 @@
 
 - Espace : SIRAT — LE FAMEUX PARCOURS CLAUDE AI (id 2695523)
 - Image de couverture : `annonce-veille-couverture.png` (1960 × 700) ; version 16:9 : `annonce-veille.png`
-- Titre : `Veille de sujets : ne sois plus jamais à sec pour publier`
+- Titre : `Veille de sujets : tes sujets de contenu chaque semaine, vérifiés à la source et prêts à être filmés`
 
 ```
 Assalamou alaykoum la famille 🤍
 
 Petit rappel pour ceux qui ont perdu le fil : dans Claude Code, tu as le parcours du Collectif Tariqa PRO, qui t'aide à exécuter toute la méthode, pour te rendre autonome. Tout le savoir et la vision du Collectif au bout du fil, et Coach Zaki qui te challenge à chaque étape.
 
-Aujourd'hui, une nouvelle brique s'ajoute : la VEILLE DE SUJETS. Pour ne plus jamais être à sec quand il faut publier.
+Aujourd'hui, une nouvelle brique s'ajoute : la VEILLE DE SUJETS. Chaque semaine, Claude te propose des sujets de contenu pour ta niche, vérifiés à la source et prêts à être filmés.
 
 👉 La page qui explique tout : https://collectif-tariqa-pro.github.io/ctp-veille/
 👉 Le plugin, réservé aux membres : https://github.com/Collectif-Tariqa-PRO/ctp-veille-plugin.git
