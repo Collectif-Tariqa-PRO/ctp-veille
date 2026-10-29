@@ -1,4 +1,4 @@
-# Post Circle — Veille de sujets
+# Post Circle — Veille de sujets (PUBLIÉ le 29/10/2026, post 37926046)
 
 - Espace : SIRAT — LE FAMEUX PARCOURS CLAUDE AI (id 2695523)
 - Image de couverture : `annonce-veille-couverture.png` (1960 × 700) ; version 16:9 : `annonce-veille.png`
