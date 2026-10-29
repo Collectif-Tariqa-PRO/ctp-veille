@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille de sujets — Collectif Tariqa PRO</title>
+<meta name="description" content="Chaque semaine, des sujets de contenu précis, vérifiés à la source et triés selon ta marque, puis des cartes prêtes à filmer. La Veille de sujets du Collectif Tariqa PRO, réservée aux membres.">
+<style>
+  :root{
+    --beige:#F4EFE5; --beige-2:#EDE6D6; --noir:#161413; --noir-2:#2c2722;
+    --or:#C29B45; --or-soft:#E8D9B5; --blanc:#FFFFFF; --gris:#6f675c;
+    --ok:#3f7a4f; --warn:#9a6a1f;
+    --radius:16px; --maxw:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    background:var(--beige); color:var(--noir);
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto}
+  header{text-align:center;padding:64px 0 40px}
+  .kicker{letter-spacing:.28em;text-transform:uppercase;font-size:12px;color:var(--or);font-weight:700;margin-bottom:18px}
+  h1{font-size:clamp(30px,6vw,46px);line-height:1.1;font-weight:800;letter-spacing:-.02em}
+  h1 .or{color:var(--or)}
+  .tagline{margin-top:14px;font-style:italic;color:var(--gris);font-size:17px}
+  .sub{margin-top:22px;font-size:17px;color:var(--noir-2);max-width:540px;margin-left:auto;margin-right:auto}
+  .rule{width:54px;height:3px;background:var(--or);border-radius:3px;margin:30px auto 0}
+  section{margin:40px 0}
+  h2{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--or);font-weight:700;margin-bottom:8px}
+  .lead{font-size:24px;font-weight:800;letter-spacing:-.01em;margin-bottom:16px;line-height:1.25}
+  .step{background:var(--blanc);border:1px solid var(--beige-2);border-radius:var(--radius);padding:26px 26px 24px;margin:18px 0;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .step-head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+  .num{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:var(--noir);color:var(--or);display:grid;place-items:center;font-weight:800;font-size:18px}
+  .step-head h3{font-size:20px;font-weight:800;letter-spacing:-.01em}
+  .step p{margin:10px 0;color:var(--noir-2)}
+  .step ul{margin:10px 0 10px 4px;list-style:none}
+  .step ul li{position:relative;padding-left:24px;margin:7px 0;color:var(--noir-2)}
+  .step ul li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--or)}
+  .cmd{position:relative;background:var(--noir);color:#f3ead6;border-radius:12px;padding:16px 54px 16px 18px;margin:12px 0;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:14.5px;overflow-x:auto;white-space:nowrap}
+  .cmd .copy{position:absolute;right:8px;top:8px;background:var(--or);color:var(--noir);border:none;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit}
+  .cmd .copy:active{transform:scale(.96)}
+  .say{display:inline-block;background:var(--or-soft);color:var(--noir);border-radius:10px;padding:10px 14px;margin:10px 0;font-weight:700}
+  .note{border-radius:12px;padding:16px 18px;margin:16px 0;font-size:15px}
+  .note .t{font-weight:800;margin-bottom:4px;display:block}
+  .note.info{background:var(--or-soft);border-left:4px solid var(--or)}
+  .note.ok{background:#e8f0e6;border-left:4px solid var(--ok)}
+  .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:8px}
+  @media(min-width:560px){.grid{grid-template-columns:1fr 1fr}}
+  .tile{background:var(--blanc);border:1px solid var(--beige-2);border-radius:14px;padding:18px}
+  .tile .e{font-size:22px}
+  .tile b{display:block;margin:6px 0 2px;font-size:16px}
+  .tile span{color:var(--gris);font-size:14px}
+  details{background:var(--blanc);border:1px solid var(--beige-2);border-radius:12px;padding:4px 18px;margin:10px 0}
+  details summary{cursor:pointer;font-weight:700;padding:12px 0;list-style:none}
+  details summary::-webkit-details-marker{display:none}
+  details summary::before{content:"+ ";color:var(--or);font-weight:800}
+  details[open] summary::before{content:"– "}
+  details p{padding:0 0 14px;color:var(--noir-2)}
+  footer{text-align:center;padding:48px 0 60px;color:var(--gris)}
+  footer .brand{font-weight:800;color:var(--noir);font-size:18px}
+  footer .tg{color:var(--or);font-style:italic;margin-top:4px}
+  .bismillah{font-size:15px;color:var(--noir-2);margin-bottom:18px}
+  .rm{width:100%;border-collapse:collapse;background:var(--blanc);border:1px solid var(--beige-2);border-radius:14px;overflow:hidden;font-size:15px;margin-top:10px}
+  .rm th,.rm td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--beige-2)}
+  .rm th{background:var(--beige-2);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--noir-2)}
+  .rm tr:last-child td{border-bottom:0}
+  .rm .ok{color:var(--ok);font-weight:700;white-space:nowrap}
+  .rm .soon{color:var(--gris);white-space:nowrap}
+  .rm .here td{background:rgba(194,155,69,.12);font-weight:700}
+  .rm a{color:var(--or);font-weight:600}
+  @media(max-width:520px){.rm{font-size:13.5px}.rm th,.rm td{padding:9px 8px}.rm .ok,.rm .soon{white-space:normal}}
+  .menu{background:var(--blanc);border:1px solid var(--beige-2);border-radius:14px;overflow:hidden;margin-top:12px}
+  .menu .mh{background:var(--noir);color:var(--or);padding:12px 16px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+  .menu .row{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;padding:11px 16px;border-bottom:1px solid var(--beige-2);font-size:15px}
+  .menu .row:last-child{border-bottom:0}
+  .menu .n{color:var(--or);font-weight:800}
+  .menu .tg{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris);white-space:nowrap}
+  .menu .ans{grid-column:2/4;font-size:13px;color:var(--ok);font-weight:700}
+  .menu .ans.no{color:#9a3b2e}
+  @media(max-width:520px){.menu .row{grid-template-columns:28px 1fr}.menu .tg{grid-column:2}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Collectif Tariqa PRO · Veille de sujets</div>
+    <h1>Ne sois plus jamais<br><span class="or">à sec</span>.</h1>
+    <p class="tagline">Entreprendre. Ensemble. Vers Dieu.</p>
+    <p class="sub">Chaque semaine, un menu de sujets précis, vérifiés à la source et triés selon ta marque. Tu réponds OUI ou NON. Chaque sujet retenu devient une carte prête à filmer. Toi, tu apportes ton vécu.</p>
+    <div class="rule"></div>
+  </header>
+
+  <section>
+    <h2>Pourquoi cette brique</h2>
+    <p class="lead">Tu as la vision. Il te manque la matière.</p>
+    <div class="step">
+      <p>Tu connais ton métier mieux que n'importe qui. Ce qui manque souvent pour publier chaque semaine, ce n'est pas l'envie : c'est <b>la matière précise et sourcée</b>. Le chiffre du mois, la règle qui vient de changer, la question que tout ton marché se pose.</p>
+      <p>Résultat : on reste dans les généralités, ou on ne publie pas. La veille va chercher cette matière pour toi, chaque semaine, dans ta niche et dans ses langues. Elle la <b>vérifie à la source</b>, la <b>trie selon ta marque</b>, et te la sert prête à l'emploi.</p>
+      <div class="note info"><span class="t">Ce qu'elle ne fera jamais à ta place</span>Ton vécu. Chaque carte garde une branche « Ton vécu à toi », avec des questions que toi seul peux remplir. Un contenu que n'importe qui « qui a tapé dans Claude » aurait pu faire ne sert pas ta marque.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ce que tu reçois</h2>
+    <p class="lead">Un menu le lundi, des cartes ensuite, un bilan chaque mois.</p>
+    <div class="menu">
+      <div class="mh">Exemple de menu · un atelier de couture imaginaire</div>
+      <div class="row"><span class="n">1</span><span>Faire retoucher plutôt que racheter : ce qui est vraiment remboursé.</span><span class="tg">Attirer · Reel</span><span class="ans">✓ Oui</span></div>
+      <div class="row"><span class="n">2</span><span>Robe de mariée sur mesure : pourquoi il faut commencer neuf mois avant.</span><span class="tg">Rassurer · Vidéo longue</span><span class="ans">✓ Oui</span></div>
+      <div class="row"><span class="n">3</span><span>La nouvelle règle d'étiquetage des tissus, expliquée en une minute.</span><span class="tg">Rassurer · Reel</span><span class="ans no">✗ Non, pas pour mes clientes</span></div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <div class="tile"><b>Le menu de la semaine</b><span>Un tableau « en un coup d'œil », puis chaque sujet avec son information clé, sa date, pourquoi il parle à ta cible, et ses liens pour aller plus loin.</span></div>
+      <div class="tile"><b>Les cartes mentales</b><span>L'idée au centre, cinq branches courtes, une accroche. Elles se lisent sur ton téléphone en trente secondes, juste avant de tourner.</span></div>
+      <div class="tile"><b>Le bilan du mois</b><span>Ce que tu gardes, ce que tu refuses, ce que ton public regarde. Au plus cinq règles proposées, que tu tranches.</span></div>
+      <div class="tile"><b>Une veille qui apprend</b><span>Elle ne repropose jamais un sujet refusé, et elle suit les règles que tu as validées, mois après mois.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Comment ça marche</h2>
+    <p class="lead">Une installation, puis une boucle d'une semaine.</p>
+
+    <div class="step">
+      <div class="step-head"><div class="num">0</div><h3>L'installation, une seule fois</h3></div>
+      <p>Compte une demi-heure à une heure, selon ta niche. Claude relit <b>« Mon projet »</b> pour ne pas te reposer de questions, puis il te pose seulement ce qui manque : tes langues, ta zone, tes thèmes, ton rythme, ce que tu ne veux pas traiter.</p>
+      <p>Ensuite, il te propose <b>une liste de sources pour ta niche, déjà testées</b> : l'actualité officielle, la presse de ton métier, les autres langues, les chaînes YouTube. Tu coches, tu retires, tu ajoutes celles que tu lis déjà.</p>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">1</div><h3>Le menu</h3></div>
+      <p>Tu écris « Lance la veille ». Claude collecte, vérifie, trie. Environ trois sujets par contenu que tu tournes dans la semaine, vingt au plus. <b>Jamais de remplissage</b> : s'il n'y a que sept bons sujets, tu en reçois sept.</p>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">2</div><h3>Ta réponse</h3></div>
+      <p>Cinq minutes. Tu réponds depuis le seul tableau : <b>« 1, 4, 7 oui, le reste non »</b>. Un commentaire suffit pour demander un autre angle.</p>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">3</div><h3>Les cartes</h3></div>
+      <p>Tu écris « Fais les cartes ». Chaque chiffre est revérifié le jour même. Tu remplis la branche « Ton vécu à toi » de tête, et tu tournes. Pour une vidéo longue, la carte peut passer à la brique Stratégie de contenu.</p>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">4</div><h3>Le bilan du mois</h3></div>
+      <p>Tu écris « Fais le bilan ». Claude te montre ce qui marche et te propose des règles. <b>Rien ne change sans ton accord</b>, et un bilan peut renforcer ta marque, jamais l'assouplir. Coach Zaki te challenge avant que tu tranches. Tu peux aussi l'apporter en coaching.</p>
+    </div>
+    <div class="note info"><span class="t">Programme-la une fois pour toutes</span>Claude te propose de lancer la veille chaque lundi, pour que le menu t'attende. Elle se loge dans ton agenda réel, pas en charge en l'air.</div>
+  </section>
+
+  <section>
+    <h2>Ce que la veille vérifie pour toi</h2>
+    <p class="lead">La règle d'or : qu'est-ce que ça apporte à la personne qui regarde ?</p>
+    <div class="step">
+      <ul>
+        <li><b>Chaque chiffre est vérifié à la source primaire</b> : le texte officiel, le rapport, l'étude. Pas l'article qui l'a repris.</li>
+        <li><b>La date du fait, pas la date de l'article.</b> La presse recycle de vieilles informations : une décision d'il y a six mois devient un rappel, jamais une fausse nouveauté.</li>
+        <li><b>Les formules gonflées sont relues</b> : « le premier pays à… », « un record historique ». On vérifie la phrase exacte.</li>
+        <li><b>Aucune promesse</b> de gain ou de rendement, aucun montant en guise de preuve, <b>jamais le nom d'un concurrent</b> dans un contenu.</li>
+        <li><b>Les créateurs de ta langue</b> servent à savoir ce qui a déjà été dit, pour trouver l'angle qui manque. On peut reprendre une forme, jamais un fond.</li>
+        <li><b>Aucun contournement</b> : pas de site forcé, pas de lecture détournée d'Instagram ou de LinkedIn.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>La méthode complète — où tu en es</h2>
+    <p class="lead">Six piliers, dans l'ordre, et des briques transversales.</p>
+    <table class="rm"><thead><tr><th>Pilier</th><th>Ce que tu y fais</th><th>Statut</th></tr></thead><tbody>
+      <tr><td><strong>1 · Mindset</strong></td><td>l'état d'esprit qui tient <b>+</b> ton projet au clair : persona → offre → positionnement (marque) → voix</td><td class="ok"><a href="https://collectif-tariqa-pro.github.io/ctp-plugin/">✓ disponible</a></td> </tr>
+      <tr><td><strong>2 · Vente</strong></td><td>vendre, et le prouver par la répétition</td><td class="ok"><a href="https://collectif-tariqa-pro.github.io/ctp-vente/">✓ membres</a></td> </tr>
+      <tr><td><strong>3 · Produit</strong></td><td>passer d'un MVP à un vrai produit</td><td class="ok"><a href="https://collectif-tariqa-pro.github.io/ctp-produit/">✓ membres</a></td> </tr>
+      <tr><td><strong>4 · Marketing</strong></td><td>être trouvé, être choisi</td><td class="ok"><a href="https://collectif-tariqa-pro.github.io/ctp-marketing/">✓ membres</a></td> </tr>
+      <tr><td><strong>5 · Opérations</strong></td><td>structurer ta boîte pour passer de solo à équipe</td><td class="ok"><a href="https://collectif-tariqa-pro.github.io/ctp-process/">✓ membres</a></td> </tr>
+      <tr><td><strong>6 · Finances</strong></td><td>piloter l'argent sainement</td><td class="soon">à venir</td> </tr>
+      <tr class="here"><td><strong>+ Veille de sujets</strong></td><td>des sujets sourcés chaque semaine, au service du Marketing — <em>tu es ici</em></td><td class="ok">✓ membres</td> </tr>
+      <tr><td><strong>+ Stratégie de contenu</strong></td><td>YouTube : stratégie et production</td><td class="ok"><a href="https://collectif-tariqa-pro.github.io/ctp-youtube/">✓ membres</a></td> </tr>
+      <tr><td><strong>+ Stratégie de marque</strong></td><td>la marque en profondeur, quand le marché t'a répondu</td><td class="ok"><a href="https://collectif-tariqa-pro.github.io/ctp-marque/">✓ membres</a></td> </tr>
+    </tbody></table>
+  </section>
+
+  <section>
+    <h2>Est-ce le bon moment pour toi ?</h2>
+    <p class="lead">Réservée aux membres, dès que « Mon projet » est fait.</p>
+    <div class="step">
+      <ul>
+        <li>Tu as fait <b>« Mon projet »</b> : persona → offre → positionnement (marque) → voix. C'est avec eux que la veille trie. Sans eux, elle te dit lequel manque et t'aide à le faire.</li>
+        <li>Tu n'as <b>pas besoin d'avoir fini le parcours Marketing</b>. Si tu l'as fait, la veille lit aussi tes verbatims et ton calendrier, et y reporte les sujets retenus.</li>
+        <li>Elle sert autant <b>l'expert qui accompagne des clients à l'international</b> que <b>l'artisan qui vend dans sa ville</b> : seules les sources changent.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Installation</h2>
+    <p class="lead">D'abord tes outils, puis la brique. Claude te guide si ça bloque.</p>
+    <div class="step">
+      <div class="step-head"><div class="num">0</div><h3>Avant de commencer</h3></div>
+      <ul>
+        <li><b>Claude Code.</b> Il te faut un abonnement Claude qui donne accès à Claude Code, et l'application de bureau Claude (claude.ai/download), onglet <b>Code</b>.</li>
+        <li><b>Un compte GitHub, gratuit.</b> Crée ton compte sur github.com, puis communique ton nom d'utilisateur GitHub au Collectif via l'espace Circle.</li>
+        <li><b>L'invitation du Collectif.</b> Tu reçois par e-mail une invitation de l'organisation <b>Collectif-Tariqa-PRO</b>. Accepte-la : c'est elle qui t'ouvre l'accès. Si tu as déjà accès aux autres piliers, tu as déjà accès à celui-ci.</li>
+      </ul>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">1</div><h3>Ouvre ton dossier de travail dans Claude Code</h3></div>
+      <p><b>Le même que pour tes piliers précédents.</b> La veille va y lire ton persona, ton offre, ton positionnement et ta voix.</p>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">2</div><h3>Installe la boîte à outils du Collectif (prérequis)</h3></div>
+      <p>Elle contient le parcours du Collectif Tariqa PRO, « Mon projet » et <b>Coach Zaki</b>. Colle ce message dans Claude :</p>
+      <div class="cmd"><button class="copy">Copier</button>Installe le plugin du Collectif Tariqa PRO depuis ce lien : https://github.com/Collectif-Tariqa-PRO/ctp-plugin.git</div>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">3</div><h3>Installe la Veille de sujets (réservée aux membres)</h3></div>
+      <p>Colle ce message dans Claude :</p>
+      <div class="cmd"><button class="copy">Copier</button>Installe le plugin Veille de sujets depuis ce lien : https://github.com/Collectif-Tariqa-PRO/ctp-veille-plugin.git</div>
+      <p>Ou tape ces deux commandes, l'une après l'autre :</p>
+      <div class="cmd"><button class="copy">Copier</button>/plugin marketplace add Collectif-Tariqa-PRO/ctp-veille-plugin</div>
+      <div class="cmd"><button class="copy">Copier</button>/plugin install collectif-tariqa-pro-veille@ctp-veille</div>
+      <div class="note info"><span class="t">L'accès est refusé ?</span>Deux raisons possibles. Soit tu n'as pas encore accepté l'invitation de l'organisation Collectif-Tariqa-PRO : cherche l'e-mail de GitHub, y compris dans tes courriers indésirables. Soit Claude Code n'est pas connecté à ton compte GitHub : écris-lui « connecte-toi à mon compte GitHub », et valide toi-même dans ton navigateur.</div>
+      <div class="note info"><span class="t">Pas encore membre ?</span>Le lien ne s'ouvrira pas : l'accès est réservé aux membres du Collectif. Le pilier 1, lui, est en accès libre. Pour la suite, rejoins le Collectif, et l'accès s'ouvre dans ton espace.</div>
+    </div>
+    <div class="step">
+      <div class="step-head"><div class="num">4</div><h3>Lance</h3></div>
+      <p>Toujours dans ce dossier, écris simplement :</p>
+      <div class="say">Installe ma veille</div>
+      <p>« Je sais pas quoi publier » ou « je n'ai plus d'idées » fonctionnent aussi.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quand tu bloques — Coach Zaki</h2>
+    <p class="lead">Un coach qui te pousse, pas qui te flatte.</p>
+    <div class="step">
+      <p>Si tu refuses tous les sujets d'un même type, il te demande une fois si c'est un goût ou une esquive. Si tu n'as rien à mettre dans « Ton vécu à toi », il creuse. Et s'il te voit peaufiner ta veille au lieu de tourner, il te le dit.</p>
+      <div class="say">coache-moi, je n'arrive pas à publier régulièrement</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions fréquentes</h2>
+    <details><summary>Combien ça coûte ?</summary><p>Rien de plus que ton abonnement Claude (nécessaire pour Claude Code). Les sources sont gratuites et il n'y a rien à installer. Si tu as déjà vidIQ, qui est payant, Claude s'en sert pour mesurer la demande et lire les commentaires de ta niche. Sans vidIQ, la veille fonctionne entièrement.</p></details>
+    <details><summary>Est-ce que Claude écrit mes scripts ?</summary><p>Non, et c'est voulu. Tu reçois une carte mentale : l'idée, l'information clé, pourquoi elle compte, tes questions de vécu, la chute, et une seule phrase rédigée, l'accroche. Tu racontes avec tes mots.</p></details>
+    <details><summary>Ma niche est très locale. Ça marche quand même ?</summary><p>Oui. Les sources changent : la presse de ta ville, les règles de ton métier, les événements de ta région, les chaînes de ton artisanat. Quand l'actualité est calme, la veille puise dans tes idées, les mots de tes clients et tes meilleurs contenus passés, toujours en vérifiant chaque chiffre.</p></details>
+    <details><summary>Je travaille avec un vidéaste. Il peut faire tourner la veille ?</summary><p>Oui, avec le mode équipe : la veille vit dans un dossier Google Drive partagé. Ton vidéaste la lance, tu réponds au menu depuis ton téléphone en commentant le document. C'est gratuit, avec une installation guidée d'une vingtaine de minutes.</p></details>
+    <details><summary>Elle va suivre mes concurrents ?</summary><p>Elle regarde ce qui a déjà été dit dans ta langue, pour que tu trouves l'angle qui manque au lieu de répéter. Elle ne nomme jamais un concurrent dans un contenu, et ne recopie jamais le fond d'un créateur.</p></details>
+    <details><summary>Où vont mes données ?</summary><p>Nulle part ailleurs que dans ton dossier. Ton profil, tes sources, tes menus, ton historique et tes préférences sont des fichiers que tu peux ouvrir et corriger. En mode équipe, dans ton propre Google Drive.</p></details>
+  </section>
+
+  <footer>
+    <p class="bismillah">Bismillah, et bonne veille. On avance — ensemble.</p>
+    <div class="brand">Collectif Tariqa PRO</div>
+    <div class="tg">Entreprendre. Ensemble. Vers Dieu.</div>
+  </footer>
+
+</div>
+<script>
+  document.querySelectorAll('.cmd .copy').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var txt=btn.parentNode.textContent.replace('Copier','').trim();
+      navigator.clipboard.writeText(txt).then(function(){
+        var old=btn.textContent;btn.textContent='Copié ✓';
+        setTimeout(function(){btn.textContent=old;},1500);
+      });
+    });
+  });
+</script>
+</body>
+</html>
